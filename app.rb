@@ -1,3 +1,5 @@
+<!
+
 require_relative 'config/environment'
 
 class App < Sinatra::Base
@@ -7,7 +9,7 @@ class App < Sinatra::Base
   end 
   
   get '/reverse' do
-    puts params [:]
+    puts params [:].reverse
     erb :reverse
   end
 
